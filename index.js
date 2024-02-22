@@ -36,10 +36,10 @@ app.get("/courses/backend-courses-sorted", async (req, res) => {
             if (isBackendCourse) {
               backendCourses.push(course);
             }
-        });
-      }
+          });
+        }
+      });
     });
-});
 
     // Sort backend courses alphabetically by description
     backendCourses.sort((a, b) => a.description.localeCompare(b.description));
